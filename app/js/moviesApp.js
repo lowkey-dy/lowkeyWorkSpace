@@ -23,6 +23,7 @@
 
 'use strict';
 
+<<<<<<< HEAD
 // const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 // const personalMovieDB = {
@@ -69,6 +70,8 @@
 
 // Код возьмите из предыдущего домашнего задания
 
+=======
+>>>>>>> d0a96d4074cdc47af3fb52a12f328e6da96a338b
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
@@ -76,6 +79,7 @@ const personalMovieDB = {
     movies: {},
     genres: [],
     privat: false
+<<<<<<< HEAD
 };
 
 for (let i = 0; i < 2; i++) {
@@ -106,3 +110,19 @@ for (let i = 0; i < 2; i++) {
 }
 
 console.log(personalMovieDB);
+=======
+}
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
+
+
+>>>>>>> d0a96d4074cdc47af3fb52a12f328e6da96a338b
