@@ -22,38 +22,6 @@
 // Проверить, чтобы все работало без ошибок в консоли 
 
 'use strict';
-
-<<<<<<< HEAD
-// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-
-// const personalMovieDB = {
-//     count: numberOfFilms,
-//     movies: {},
-//     genres: [],
-//     privat: false
-// }
-
-// for (let i = 0; i < 2; i++) {
-//     const a = prompt('Один из последних просмотренных фильмов?', ''),
-//     const b = prompt('На сколько оцените его?', '');
-
-//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-
-//     }
-    
-// }
-
-// const a = prompt('Один из последних просмотренных фильмов?', ''),
-//       b = prompt('На сколько оцените его?', ''),
-//       c = prompt('Один из последних просмотренных фильмов?', ''),
-//       d = prompt('На сколько оцените его?', '');
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-
-// console.log(personalMovieDB);
-
-
 /* Задание на урок:
 
 1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
@@ -70,8 +38,7 @@
 
 // Код возьмите из предыдущего домашнего задания
 
-=======
->>>>>>> d0a96d4074cdc47af3fb52a12f328e6da96a338b
+
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
@@ -79,7 +46,7 @@ const personalMovieDB = {
     movies: {},
     genres: [],
     privat: false
-<<<<<<< HEAD
+
 };
 
 for (let i = 0; i < 2; i++) {
@@ -110,19 +77,3 @@ for (let i = 0; i < 2; i++) {
 }
 
 console.log(personalMovieDB);
-=======
-}
-
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
-
-
-
->>>>>>> d0a96d4074cdc47af3fb52a12f328e6da96a338b
