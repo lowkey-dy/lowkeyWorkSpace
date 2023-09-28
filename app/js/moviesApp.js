@@ -83,37 +83,7 @@ function writeYourGenres () {
 }
 writeYourGenres();
 
-// Место для первой задачи
-function getTimeFromMinutes(getTime) {
-    if (typeof(getTime) !== 'number' || getTime < 0 || !Number.isInteger(getTime)) {
-        return "Ошибка, проверьте данные";
-    }
 
-    const hours = Math.floor(getTime / 60);
-    const minutes = getTime % 60;
-
-    let hourStr = '';
-
-    switch (hours) {
-        case 0:
-            hourStr = 'часов';
-            break;
-        case 1:
-            hourStr = 'час';
-            break;
-        case 2:
-        case 3:
-        case 4:
-            hourStr = 'часа';
-            break;
-        default:
-            hourStr = 'часов';
-    }
-
-    return `Это ${hours} ${hourStr} и ${minutes} минут`;
-}
-
-getTimeFromMinutes(180);
 
 
 
