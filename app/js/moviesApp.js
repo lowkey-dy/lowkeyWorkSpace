@@ -21,11 +21,10 @@ let numberOfFilms;
 function start() {
     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-    while (numberOfFilms == '' || numberOfFilms == null ||isNaN(numberOfFilms)) {
+    while (numberOfFilms == ''|| numberOfFilms == null ||isNaN(numberOfFilms)) {
         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
     }
-};
-
+}
 start();
 
 const personalMovieDB = {
@@ -38,7 +37,7 @@ const personalMovieDB = {
 
 function rememberMyFilms () {
     for (let i = 0; i < 2; i++) {
-        const a = prompt('Один из последних просмотренных фильмов?', ''),
+        const a = prompt('Один из последних просмотренных фильмов?', '').trim(78),
               b = prompt('На сколько оцените его?', '');
     
         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
@@ -50,8 +49,7 @@ function rememberMyFilms () {
         }
     }
 
-};
-
+}
 rememberMyFilms();
 
 function detectPersonalLevel() {
@@ -75,8 +73,7 @@ function showMyDB (hidden) {
     if (!hidden) {
         console.log(personalMovieDB);
     }
-};
-
+}
 showMyDB (personalMovieDB.privat);
 
 function writeYourGenres () {
@@ -84,8 +81,41 @@ function writeYourGenres () {
         personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
     }
 }
-
 writeYourGenres();
+
+// Место для первой задачи
+function getTimeFromMinutes(getTime) {
+    if (typeof(getTime) !== 'number' || getTime < 0 || !Number.isInteger(getTime)) {
+        return "Ошибка, проверьте данные";
+    }
+
+    const hours = Math.floor(getTime / 60);
+    const minutes = getTime % 60;
+
+    let hourStr = '';
+
+    switch (hours) {
+        case 0:
+            hourStr = 'часов';
+            break;
+        case 1:
+            hourStr = 'час';
+            break;
+        case 2:
+        case 3:
+        case 4:
+            hourStr = 'часа';
+            break;
+        default:
+            hourStr = 'часов';
+    }
+
+    return `Это ${hours} ${hourStr} и ${minutes} минут`;
+}
+
+getTimeFromMinutes(180);
+
+
 
 
 
