@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100px;
+}
+
+h1, h2 {
+    font-size: 50px;
+}
+
+.phone-book {
+    width: 1200px;
+    height: 790px;
+    background: linear-gradient(123.73deg,#0077c8 20.82%,rgba(0,119,200,0) 99.26%),#004c97; 
+    margin: 0 auto;
+    padding:32px 44px 32px 44px ;
+}
+
+.phone-book__action-btns {
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.phone-book__input {
+    width: 95%;
+    height: 50px;
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.phone-book {
+    
+}
+
+.search__button {
+    
+}
+
+.phone-book_btn {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.phone-book__content {
+    display:grid;
+}
