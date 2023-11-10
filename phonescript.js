@@ -1,4 +1,5 @@
 'use strict';
+document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
 
 document.querySelector('.search__btn').onclick = function() {
   
@@ -19,12 +20,13 @@ document.querySelector('.search__btn').onclick = function() {
    
     let userName = phoneDataBase.find(el => el.name == nameUpperCase || el.surname == nameUpperCase || el.surname == nameUpperCase);
     
-    document.querySelector('.show-pole_1').textContent = userName.surname;
-    document.querySelector('.show-pole_2').textContent = userName.name;
-    // document.querySelector('.show-pole_3').textContent = userName.thirdname;
+    document.querySelector('.show-pole_surname').textContent = userName.surname;
+    document.querySelector('.show-pole_name').textContent = userName.name;
+    document.querySelector('.show-pole_phone').textContent = userName.phone;
+    document.querySelector('.show-pole_light').textContent = userName.light;
+    document.querySelector('.show-pole_id').textContent = userName.id;
+    document.querySelector('.show-pole_photo').cssText = `background-image: url('../img/im.jpg')`;
     
-    document.querySelector('.show-pole_4').textContent = userName.phone;
-    document.querySelector('.show-pole_5').textContent = userName.id;
     
 };
 
@@ -38,9 +40,11 @@ document.querySelector('.clear__btn').onclick = function() {
     };
     deleteText(textRemove);
   
-    document.querySelector('.surname__input').value = '';
+    document.querySelector('.surname__input').value = ''; //Очищает инпут
 
 };
+
+}); 
 
 
     
