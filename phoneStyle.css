@@ -48,14 +48,43 @@ a {
 body {
     font-family: 'Proxima Nova Rg';
     /* padding-top: 30px; */
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     margin: 0;
+    background-size: cover;
+    /* background-color:#004c97;
+    opacity: 1 ; */
+    color:#fff;
+    background: url(../img/nikelbg.png) left;
 }
+
+.overlay1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* background-color:#FFF; */
+    backdrop-filter:blur(10px);
+    opacity: 0.8;
+    top: -50px;
+    z-index: 20;
+}
+
+.overlay2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color:#FFF;
+    opacity: 0.8;
+    top: -50px;
+    z-index: 10;
+}
+
 
 h1, h2 {
     font-family: 'Proxima Nova';
     color:#ffff;
-    font-size: 50px;
+    font-size: 55px;
     margin-top: 0;
     margin-bottom: 50px;
 }
@@ -79,11 +108,23 @@ input {
 }
 
 .phone-book {
+    z-index: 100;
     width: 1200px;
     /* height: 690px; */
     background: linear-gradient(123.73deg,#0077c8 20.82%,rgba(0,119,200,0) 99.26%),#004c97; 
     margin: 0 auto;
-    padding:50px 50px 20px 50px ;
+    padding:50px 80px 20px 80px ;
+    box-shadow: -7px 7px 16px 2px #737373;
+    border-radius: 30px 30px;
+    margin-top: 50px;
+    position: relative;
+ 
+}
+
+.phone-book:hover {
+   
+   transition: all 0.5s;
+ 
 }
 
 .phone-book__top {
@@ -93,19 +134,46 @@ input {
 }
 
 .phone-book__top__text {
-    /* font-family: 'Proxima Nova'; */
+    font-family: 'Proxima Nova Bl';
     font-size: 20px;
     color:#ffff;
     text-align: center;
-    margin-top: -15px;
+    margin-top: -10px;
+}
+
+.subtitle {
+    position: absolute;
+    top:140px;
+    left:150px;
+}
+
+.subtitle:before {
+    position:absolute;
+    content:'';
+    width: 50px;
+    height: 1px;
+    display: block;
+    background: linear-gradient(91deg, #FFF 45.27%, rgba(255, 255, 255, 0.00) 187.91%);
+    backdrop-filter: blur(5px);
+    left:-60px;
+    bottom:10px;
+}
+.subtitle:after {
+    position:absolute;
+    content:'';
+    width: 50px;
+    height: 1px;
+    display: block;
+    background: linear-gradient(91deg, #FFF 45.27%, rgba(255, 255, 255, 0.00) 187.91%);
+    backdrop-filter: blur(5px);
+    right:-60px;
+    bottom:10px;
 }
 
 .phone-book__main {
     display: flex;
     justify-content: space-between;
- 
 }
-
 
 .phone-book__main_list {
     display: flex;
@@ -113,7 +181,8 @@ input {
     justify-content: space-between;
     width: 408px;
     height: 120px;
-  
+    position: absolute;
+    bottom:210px;
 }
 
 .phone-book__main_list_item {
@@ -129,12 +198,27 @@ input {
 .phone-book__main_photo {
     display: flex;
     justify-content: space-around;
+    align-items:center;
     width: 300px;
     height: 345px;
     border-radius: 0px 30px;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(7.5px);
-    background-image:url('../img/im.jpg') 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color:#CECECE;
+}
+
+.fotoback {
+    background-image:url('../img/im.jpg');
+}
+
+.fotoback1 {
+    background-image:url('../img/BgF.png');
+}
+
+.fotoback2 {
+    background-image:url('../img/vusal.jpg');
 }
 
 .phone-book__action-btns {
@@ -230,7 +314,7 @@ input {
     display: flex;
     justify-content: space-around;
     align-items:center;
-    transition: background-color .25s linear, border-color .25s linear,color .25s linear;
+    transition: background-color .23s linear, border-color .23s linear,color .23s linear;
 }
 
 .search__btn:hover {
@@ -242,6 +326,7 @@ input {
 .search__btn:hover::after {
     color:#fff;
     background-color:#004c97;
+    transition: background-color .24s linear,border-color .24s linear,color .24s linear;
 }
 
 .search__btn img {
@@ -257,10 +342,74 @@ input {
 .copyright {
     font-size: 10px;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -30px;
+    bottom: 10px;
     color:#D6D6D6;
 }
+
+
+/* .phone-book_backside {
+    z-index: 100;
+    width: 1200px;
+    height: 690px;
+    background: linear-gradient(123.73deg,#0077c8 20.82%,rgba(0,119,200,0) 99.26%),#004c97; 
+    margin: 0 auto;
+    padding:50px 80px 20px 80px ;
+    box-shadow: -7px 7px 16px 2px #737373;
+    border-radius: 30px 30px;
+    margin-top: 50px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    color:#ffff;
+} */
+
+
+/* .wrapper {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    
+}
+
+.info {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color:#000;
+    position: absolute;
+    z-index: 500000;
+}
+
+.info:hover .wrapper {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+} */
+
+/* .wrapper:hover  {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+} */
+
+/* .phone-book {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+} */
+
+
+
 
 
 
