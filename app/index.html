@@ -2,30 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Телефонный справочник ПУБР р-к "Октябрьский beta"</title>
+    <link rel="stylesheet" href="css/phoneStyle.css">
 </head>
 <body>
-    
-    <div class="wrapper">
-        <div class="first">
-            <button></button>
-            <button id="current"></button>
-            <button></button>
+    <div class="phone-book">
+        <div class="phone-book__top">
+            <a href="#" class="logo"><img src="#" alt="Норникель" class="logo__img"></a>
+            <p class="phone-book__top__text"><span>ПУБР</span>рудник “Октябрьский”</p>
         </div>
-        <div class="second">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li data-current="3">3</li>
-
-                <li>4</li>
-                <li>5</li>
-            </ul>
+        <div class="phone-book__main">
+            <div class="phone-book__main_left-side">
+                <div class="phone-book__main_titles">
+                    <h1 class="main-title show-pole show-pole_surname"></h1>
+                    <h2 class="main-title show-pole show-pole_name"></h2>
+                </div>
+                <div class="phone-book__main_content">
+                    <a href="#" class="phone-book_link show-pole show-pole_phone"><span></span></a>
+                    <p class="phone-book__main_content show-pole show-pole_light"><span></span></p>
+                    <p class="phone-book__main_content show-pole show-pole_id"><span></span></p>
+                </div>
+            </div>
+            <div class="phone-book__main_right-side">
+                <div class="phone-book__main_photo"></div>
+            </div>
         </div>
-        <div class="third"></div>
+        <div class="phone-book__inputs">
+            <input type="text" placeholder="Введите фамилию" class="phone-book__input surname__input">
+            <div class="phone-book__btns">
+                <button type class="phone-book_btn search__btn">Показать</button>
+                <button type class="phone-book_btn clear__btn">Очистить</button>
+            </div>
+        </div>
+        <footer class="phone-book__bottom">
+            <span class="copyright">© 2023 Дмитрий Ярапов</span>
+        </footer>
     </div>
-    <!-- renernh -->
-    <script src="js/script.js"></script>
+    <script src="js/phonescript.js"></script>
+    <script src="js/phonebookbase.js"></script>
 </body>
 </html>

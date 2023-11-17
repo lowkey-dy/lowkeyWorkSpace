@@ -1,8 +1,8 @@
 'use strict';
 
-document,addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
 
-    const movieDB = {
+    const movieDB = { // Массив
         movies: [
             "Логан",
             "Лига справедливости",
@@ -20,29 +20,27 @@ document,addEventListener('DOMContentLoaded', () => {
           addInput = addForm.querySelector('.adding__input'), // Вызов инпута формы
           checkbox = addForm.querySelector('[type = "checkbox"'); // Вызов чекбоеса формы
 
-    addForm.addEventListener('submit', (event) => { // При нажатии на кнопку Подтвердить происходит событие отправка (Event submit)
+    addForm.addEventListener('submit', (event) => { // При нажатии на кнопку 'Подтвердить' происходит событие отправка (Event submit)
         event.preventDefault(); // Отменяет перезагрузку страницы после нажатия на подтвердить
 
-        let newFilm = addInput.value;
-        const favorite = checkbox.checked;
+        let newFilm = addInput.value; // В переменную помещает данные из Input
+        const favorite = checkbox.checked; // Проверяет нажат ли чекбокс
 
-        if (newFilm) {
+        if (newFilm) {   // Если количество введенных в инпут знаков больше 21, знаки обрезает и ставит (...)
             if (newFilm.length > 21 ) {
                 newFilm = `${newFilm.substring(0, 22)}...`;
             }
 
-            if (favorite) {
+            if (favorite) { // Если чекбокс стоит флажок, выводит в консоль запись
                 console.log('Добавляем любимый фильм')
             }
 
-            movieDB.movies.push(newFilm);
-            sortArr(movieDB.movies);
+            movieDB.movies.push(newFilm); //Добавляет в массив новый фильм
+            sortArr(movieDB.movies); //Сортирует массив по алфавиту
 
-            createMovieList(movieDB.movies, movieList);
+            createMovieList(movieDB.movies, movieList); //Вызывает функцию
         }
-
-
-        event.target.reset();
+        event.target.reset(); 
 
     });
 
@@ -52,13 +50,13 @@ document,addEventListener('DOMContentLoaded', () => {
         });
     };
     
-    const makeChanges = () => {
+    const makeChanges = () => { //Изменяет жанр фильма
         genre.textContent = "Драма";
     
-        poster.style.backgroundImage = "url('img/bg.jpg')";
+        poster.style.backgroundImage = "url('img/bg.jpg')"; //Меняем постер
     };
    
-    const sortArr = (arr) => {
+    const sortArr = (arr) => { //Функция сортировки массива
         arr.sort();
     };
     
