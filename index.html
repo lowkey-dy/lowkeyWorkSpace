@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телефонный справочник ПУБР р-к "Октябрьский beta"</title>
+    <link rel="stylesheet" href="css/phoneStyle.css">
+</head>
+<div class="overlay1"></div> 
+<div class="overlay2"></div>
+<body>
+     
+    <!-- <div class="wrapper"> -->
+
+    <!-- <div class="phone-book_backside">
+        Я тащусь
+    </div> -->
+    <div class="phone-book">
+        <div class="phone-book__top">
+            <a href="#" class="logo"><img src="../phone/img/nnlogo.svg" alt="Норникель" class="logo__img"></a>
+            <p class="phone-book__top__text"><span>ПУБР</span><br>рудник “Октябрьский”</p>
+        </div>
+        <div class="phone-book__main">
+            <div class="phone-book__main_left-side">
+                <span class="subtitle">Введите фамилию и я покажу</span>
+                <div class="phone-book__main_titles">
+                    <h1 class="main-title show-pole show-pole_surname"></h1>
+                    <h2 class="main-title show-pole show-pole_name"></h2>
+                </div>
+                <ul class="phone-book__main_list">
+                    <!-- phone -->
+                    <li class="phone-book__main_list_item d-flex">
+                        <span class="phone-book__main_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="32" viewBox="0 0 25 32" fill="none">
+                                <path d="M23.9583 4C23.9583 1.79375 22.0898 0 19.7917 0H5.20834C2.91016 0 1.04167 1.79375 1.04167 4V28C1.04167 30.2062 2.91016 32 5.20834 32H19.7917C22.0898 32 23.9583 30.2062 23.9583 28V4ZM10.4167 28C10.4167 27.4696 10.6362 26.9609 11.0269 26.5858C11.4176 26.2107 11.9475 26 12.5 26C13.0525 26 13.5824 26.2107 13.9731 26.5858C14.3638 26.9609 14.5833 27.4696 14.5833 28C14.5833 28.5304 14.3638 29.0391 13.9731 29.4142C13.5824 29.7893 13.0525 30 12.5 30C11.9475 30 11.4176 29.7893 11.0269 29.4142C10.6362 29.0391 10.4167 28.5304 10.4167 28ZM5.20834 4H19.7917V24H5.20834V4Z" fill="white"/>
+                            </svg>
+                        </span>
+                        <a href="#" class="phone-book__main_list_link show-field_1 show-pole_phone">Телефон</a>
+                    </li>
+                    <!-- light -->
+                    <li class="phone-book__main_list_item d-flex">
+                        <span class="phone-book__main_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="32" viewBox="0 0 25 32" fill="none">
+                                <path d="M5.65105 15.5562C4.71355 14.2687 4.16668 12.7 4.16668 11C4.16668 6.58125 7.89714 3 12.5 3C17.1029 3 20.8333 6.58125 20.8333 11C20.8333 12.7 20.2865 14.2687 19.349 15.5562C19.1081 15.8875 18.8216 16.2625 18.5156 16.6625C17.6758 17.7688 16.6732 19.0938 15.9245 20.4C15.2474 21.5875 14.9024 22.825 14.7331 23.9937H17.9037C18.0469 23.2437 18.2878 22.5125 18.6719 21.8375C19.3164 20.7125 20.1172 19.6562 20.918 18.6C21.2565 18.1562 21.5951 17.7125 21.9206 17.2625C23.2031 15.4938 23.9583 13.3313 23.9583 11C23.9583 4.925 18.8281 0 12.5 0C6.17188 0 1.04168 4.925 1.04168 11C1.04168 13.3313 1.79688 15.4937 3.08595 17.2687C3.41147 17.7188 3.75001 18.1625 4.08855 18.6063C4.88933 19.6562 5.69011 20.7125 6.33464 21.8438C6.71876 22.5187 6.95964 23.25 7.10287 24H10.2604C10.0912 22.8312 9.7461 21.5875 9.06902 20.4062C8.32032 19.1 7.31772 17.775 6.47787 16.6688C6.17188 16.2688 5.89194 15.8938 5.65105 15.5625V15.5562ZM12.5 8C14.2253 8 15.625 9.34375 15.625 11C15.625 11.55 16.0938 12 16.6667 12C17.2396 12 17.7083 11.55 17.7083 11C17.7083 8.2375 15.3776 6 12.5 6C11.9271 6 11.4583 6.45 11.4583 7C11.4583 7.55 11.9271 8 12.5 8ZM12.5 32C15.3776 32 17.7083 29.7625 17.7083 27V26H7.29168V27C7.29168 29.7625 9.62241 32 12.5 32Z" fill="white"/>
+                            </svg>
+                        </span>
+                        <p class="phone-book__main_content show-field_2 show-pole_light">Фонарь</p>
+                    </li>
+                    <!-- # -->
+                    <li class="phone-book__main_list_item d-flex">
+                        <span class="phone-book__main_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                <path d="M14.1641 2.21485C15.5234 2.41309 16.4453 3.54102 16.2188 4.73047L15.4531 8.75H22.8828L23.7812 4.0127C24.0078 2.82325 25.2969 2.01661 26.6562 2.21485C28.0156 2.41309 28.9375 3.54102 28.7109 4.73047L27.9531 8.75H32.5C33.8828 8.75 35 9.72754 35 10.9375C35 12.1475 33.8828 13.125 32.5 13.125H27.1172L25.4531 21.875H30C31.3828 21.875 32.5 22.8525 32.5 24.0625C32.5 25.2725 31.3828 26.25 30 26.25H24.6172L23.7188 30.9873C23.4922 32.1768 22.2031 32.9834 20.8438 32.7852C19.4844 32.5869 18.5625 31.459 18.7891 30.2695L19.5547 26.2568H12.1172L11.2188 30.9941C10.9922 32.1836 9.70312 32.9902 8.34375 32.792C6.98438 32.5938 6.0625 31.4658 6.28906 30.2764L7.04688 26.25H2.5C1.11719 26.25 0 25.2725 0 24.0625C0 22.8525 1.11719 21.875 2.5 21.875H7.88281L9.54688 13.125H5C3.61719 13.125 2.5 12.1475 2.5 10.9375C2.5 9.72754 3.61719 8.75 5 8.75H10.3828L11.2812 4.0127C11.5078 2.82325 12.7969 2.01661 14.1562 2.21485H14.1641ZM14.6172 13.125L12.9531 21.875H20.3828L22.0469 13.125H14.6172Z" fill="white"/>
+                            </svg>
+                        </span>
+                        <p class="phone-book__main_content show-field_3 show-pole_id">Табельный</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="phone-book__main_right-side">
+                <div id ="fotoback" class="phone-book__main_photo field_photo fotoback1 show-pole_photo"><!-- <p class="no-photo">Фото</p>--></div>
+                <span class="info"></span>
+            </div>
+        </div>
+        <div class="phone-book__inputs">
+            <input type="text" placeholder="Введите фамилию" class="phone-book__input surname__input">
+            <div class="phone-book__btns">
+                <button type class="phone-book_btn search__btn">Показать <!--<img src="/img/Group 2.svg" alt="">--></button>
+                <button type class="phone-book_btn clear__btn">Очистить</button>
+            </div>
+        </div>
+        <footer class="phone-book__bottom">
+            <span class="copyright">© 2023 Дмитрий Ярапов</span>
+        </footer>
+    </div>
+<!-- </div> -->
+    
+    <script src="js/phonebookbase.js"></script>
+    <script src="js/phonescript.js"></script>   
+</body>
+</html>
